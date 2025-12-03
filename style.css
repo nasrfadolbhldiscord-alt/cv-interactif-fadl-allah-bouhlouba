@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #111111;
+  padding-top: 70px; /* space for fixed navbar */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Anchor offset */
+section[id],
+header[id] {
+  scroll-margin-top: 90px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: #000000;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* GENERIC SECTIONS */
+.section-padding {
+  padding: 70px 0;
+}
+
+.section-light {
+  background-color: #f7f7f7;
+}
+
+.section-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 10px;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 540px;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.btn-hero {
+  border-radius: 999px;
+  padding-inline: 26px;
+}
+
+.btn-hero-outline {
+  border-radius: 999px;
+  padding-inline: 26px;
+}
+
+.hero-socials .social-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* HERO PHOTO right side */
+.hero-photo-wrapper {
+  position: relative;
+  max-width: 360px;
+  margin-inline: auto;
+}
+
+.hero-photo-overlay {
+  position: absolute;
+  inset: 10%;
+  border-radius: 30px;
+  border: 1px solid #ffffff22;
+  backdrop-filter: blur(2px);
+}
+
+.hero-photo {
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+}
+
+/* INFO BOXES */
+.info-box {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  border: 1px solid #e4e4e4;
+}
+
+/* TIMELINE (resume) */
+.timeline-item {
+  position: relative;
+  padding-left: 24px;
+  border-left: 1px solid #444;
+  margin-left: 6px;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* SKILLS */
+.progress-thin {
+  height: 6px;
+  border-radius: 999px;
+  background-color: #e5e5e5;
+}
+
+.progress-thin .progress-bar {
+  border-radius: 999px;
+}
+
+/* CARDS */
+.card-plain {
+  border-radius: 16px;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+}
+
+.card-plain:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* DARK cards in portfolio */
+.section-dark .card-plain {
+  background-color: #050505;
+}
+
+/* IFRAME styling */
+.ratio iframe {
+  border-radius: 10px;
+  border: 1px solid #333333;
+}
+
+/* FOOTER */
+.footer-custom {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* BACK TO TOP BUTTON */
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 44px;
+  height: 44px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* LINKS IN DARK SECTION */
+.link-light {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link-light:hover {
+  text-decoration: underline;
+}
